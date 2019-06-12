@@ -22,20 +22,19 @@ include 'dbinfo.php';
 </head>
 <body>
 <div class="header" style="background-image: url(images/bghf.jpeg)" >
- <a href="#default" class="logo">LJ<br><br>Illustration & Design</a>
+ <a href="index.php" class="logo">LJ<br><br>Illustration & Design</a>
     
   <div class="header-right">
-    <a class="active" href="index.php">Home</a>
+    <a  href="index.php">Home</a>
 	<a href="about.html">About Me</a>
 
 	 
-	<a href="illustrations.html">Illustrations</a>
-	<a href="designs.html">Designs</a>
+	<a href="illustrations.php">Illustrations</a>
+	<a   href="designs.php">Designs</a>
 	 <div class="dropdown">
-  <button class="dropbtn"> <a class="active" > Workshops </a> </button>
+  <button class="dropbtn"><a class="active">Workshops</a></button>
   <div class="dropdown-content">
-  <button class="dropbtn"> <a class="active" > Workshops </a> </button>
-  <a href="gallery.html">Gallery</a>
+  <a href="workshops.php"> Workshops</a>
    <a href="booking.php">Bookings</a>
 
   </div>
@@ -48,12 +47,12 @@ include 'dbinfo.php';
 
 
 <center>
-<div class="caption-container2 about_heading">
-    <h1 style="font-family:kunstler;font-size:55px">Workshops</h1>
+<div class="caption-container2 work_hd" style=" background-color: white; color: black">
+    <h1>Workshops</h1>
 	 
   </div>
 <!-- About Container -->
-<div class="container" id="about">
+<div class="worshop_section" id="about">
   <div class="w3-content" style="max-width:80% pading=100px">
   
 
@@ -65,19 +64,21 @@ include 'dbinfo.php';
                     	if (mysqli_num_rows($result) > 0) {
 
                      		 while($row = mysqli_fetch_array($result)) {
-                              echo'<div class="container5 grid_workshop" style="width:80% ;height:auto " >
+                              echo'<div class="container5 grid_workshop" style="width:70% ;height:auto " >
                               <div>
                               <img src="./admin/'.$row['pic_url'].'" alt="workshop image" style="width:220px ;height:220px">
                               </div>
                               <div>
-                              <p><div align="left">EVENT NAME : '.$row['title'].'</div><div align="right">  EVENT DATE : '.$row['event_date'].'</div></p>
+                              <div align="right" class="event_name">EVENT NAME : '.$row['title'].'</div><div align="right" class="event_date">  EVENT DATE : '.$row['event_date'].'</div>
                               
                              
                               
-                              <p align="right"> PRICE : '.$row['price'].'</p>
-                              <p align="right"> DURATION : '.$row['duration'].' Min</p>
-							  <p align="right"> AGE GROUP : '.$row['age_group'].'</p>
-							  <p align="left"> DESCRIPTION : '.$row['work_desc'].'</p>
+                              <p align="right" class="event_date"> PRICE : '.$row['price'].'</p>
+                              <p align="right" class="event_date"> DURATION : '.$row['duration'].' Min</p>
+							  <p align="right" class="event_date"> AGE GROUP : '.$row['age_group'].'</p>
+							  <p align="right" class="event_date"> DESCRIPTION : '.$row['work_desc'].'</p>
+							  <button class="booknow_btn" style="margin:5px;"><a  href="booking.php">Book Now</a></button>
+                              <button class="booknow_btn" style="margin:5px;"><a href="https://www.eventbrite.com/">Book on Eventbrite</a></button>
                               </div>
                               </div>';
                              }
@@ -92,26 +93,24 @@ include 'dbinfo.php';
 </div>
 
 
-  <footer>
- 
-  <div class="footer" >
-  
-		
- <div class="caption-container3" style="background-image: url(images/bghf.jpeg)">
-   <p>© 2018 <a href="privacy.html">Privacy Policy.</a> All rights reserved | Design by <a href="index.php">Team05</a></p>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<div class="wrapper" >
-   <a href="https://www.facebook.com/manjinderbhullar751"><i class="fa fa-3x fa-instagram"></i></a>
-   <a href="https://www.facebook.com/manjinderbhullar751/about?lst=100003009039648%3A100003009039648%3A1533870940"><i class="fa fa-3x fa-facebook-square"></i></a>
-   <a  href="your_url_here"><i class="fa fa-3x fa-twitter-square"></i></a>
-</div>
-  </div>
-    
+<footer>
+	<div class="footer" >	
+	    <div class="caption-container3" style="background-image: url(images/bghf.jpeg)">
+	    <p>&copy; 2019 <a href="privacy.html">Privacy Policy.</a> All rights reserved</p>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<div class="wrapper" >
+		    <a href="https://www.instagram.com" target="_blank"><i class="fa fa-3x fa-instagram"></i></a>
+		    <a href="https://www.facebook.com" target="_blank"><i class="fa fa-3x fa-facebook-square"></i></a>
+		    <a  href="https://au.linkedin.com/" target="_blank"><i class="fa fa-3x  fa-linkedin"></i></a>
+		    <a  href="https://www.pinterest.com" target="_blank"><i class="fa fa-3x  fa-pinterest"></i></a>
+		</div>
+		<div class="footer" style="font-size:25px;" >
+		    <a  href="admin/index.php">Admin Login</a>
+		</div>
 
- 
 
-</div>
-
+	    </div>
+	</div>
 </footer>
 
    

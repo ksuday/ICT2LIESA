@@ -27,18 +27,17 @@ include './admin/dbinfo.php';
  <a href="index.php" class="logo">LJ<br><br>Illustration & Design</a>
     
   <div class="header-right">
-    <a href="index.php">Home</a>
+    <a  href="index.php">Home</a>
 	<a href="about.html">About Me</a>
 
 	 
-	<a href="illustrations.html">Illustrations</a>
-	<a href="designs.html">Designs</a>
+	<a href="illustrations.php">Illustrations</a>
+	<a href="designs.php">Designs</a>
 	 <div class="dropdown">
-  <button class="dropbtn"> <a class="active" > Workshops </a> </button>
+  <button class="dropbtn"><a class="active">Workshops</a></button>
   <div class="dropdown-content">
   <a href="workshops.php"> Workshops</a>
-  <a href="gallery.html">Gallery</a>
-   <a class="active" href="booking.php">Bookings</a>
+   <a href="booking.php">Bookings</a>
 
   </div>
 </div>
@@ -52,25 +51,22 @@ include './admin/dbinfo.php';
 	<!-- About Container -->
 
 	<div class="w3-content">
-	 <div class="caption-container2 about_heading">
-		<h1 style="font-family:kunstler;font-size:55px">Booking</h1>
+	 <div class="caption-container2 work_hd" style=" background-color: white; color: black">
+		<h1>Booking</h1>
 		<!-- <p>ILLUSTRATIONS</p>-->
 	  </div>
 	<div class="container" id="booking">
-			<section>
+			<section class="booking_section">
 			<div class="col-md-2"></div>
 			<div class="col-md-8 col-sm-8 col-xs-12" >
-				<form class="form-horizontal contact_form" method="post" onsubmit="return validate();" style="background-color:white">
+				<form class="contact_form" method="post" onsubmit="return validate();">
 					<div class="form-group">
-						<label class="control-label col-sm-3" >Parent Name:</label>
-						<div class="col-sm-9">
-							<input type="text" class="form-control"  name="parent" placeholder="Parent Name" required>
-						</div>
+						<label class="control-label">Parent Name:</label>
+						<input type="text" class="form-control"  name="parent" placeholder="Parent Name" required/>
 					</div>
 					
 					<div class="form-group">
-						<label class="control-label col-md-3" >Select Workshop:</label>
-						<div class="col-sm-9">
+						<label class="control-label" >Select Workshop:</label>
 							<select id="work_price" name="work">
 							<?php 
 							$result = mysqli_query($link, $sql_query);
@@ -86,29 +82,24 @@ include './admin/dbinfo.php';
 								
 								?>    
 							</select>
-						</div>
                     </div>
                     
-                    <input type="text" id="work_name" name="work_name" hidden>
+                    <input type="text" id="work_name" name="work_name" hidden/>
 		
                 
                     <div class="form-group">
-						<label class="control-label col-sm-3">Child:</label>
-						<div class="col-sm-9">
-							<input type="text" class="form-control" name="child" id="child" placeholder="No. child" required onkeyup="t();">
-						</div>
+						<label class="control-label">Child:</label>
+							<input type="text" class="form-control" name="child" id="child" placeholder="No. child" required onkeyup="t();"/>
                     </div>
                     <div class="form-group">
-						<label class="control-label col-sm-3" >Total:</label>
-						<div class="col-sm-9">
-							<input type="number" class="form-control" name="total" id="total" placeholder="0" disabled="disabled" >
-						</div>
+						<label class="control-label" >Total:</label>
+							<input type="number" class="form-control" name="total" id="total" placeholder="0" disabled="disabled" />
 					</div>
-					<div class="form-group">
-						<div class="col-sm-offset-3 col-sm-9">
+				
+						<div class="form-group">
 							<button type="submit" class="btn btn-success bookbtn" name="book">Book now</button>
 						</div>
-					</div>
+					
 				</form>
 				</div>
 				<div class="col-md-32"></div>
@@ -118,26 +109,24 @@ include './admin/dbinfo.php';
 	</div>
 
 
-	 <footer>
- 
-  <div class="footer" >
-  
-		
- <div class="caption-container3" style="background-image: url(images/bghf.jpeg)">
-   <p>© 2018 <a href="privacy.html">Privacy Policy.</a> All rights reserved | Design by <a href="index.php">Team05</a></p>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<div class="wrapper" >
-   <a href="https://www.facebook.com/manjinderbhullar751"><i class="fa fa-3x fa-instagram"></i></a>
-   <a href="https://www.facebook.com/manjinderbhullar751/about?lst=100003009039648%3A100003009039648%3A1533870940"><i class="fa fa-3x fa-facebook-square"></i></a>
-   <a  href="your_url_here"><i class="fa fa-3x fa-twitter-square"></i></a>
-</div>
-  </div>
-    
+<footer>
+	<div class="footer" >	
+	    <div class="caption-container3" style="background-image: url(images/bghf.jpeg)">
+	    <p>&copy; 2019 <a href="privacy.html">Privacy Policy.</a> All rights reserved</p>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<div class="wrapper" >
+		    <a href="https://www.instagram.com" target="_blank"><i class="fa fa-3x fa-instagram"></i></a>
+		    <a href="https://www.facebook.com" target="_blank"><i class="fa fa-3x fa-facebook-square"></i></a>
+		    <a  href="https://au.linkedin.com/" target="_blank"><i class="fa fa-3x  fa-linkedin"></i></a>
+		    <a  href="https://www.pinterest.com" target="_blank"><i class="fa fa-3x  fa-pinterest"></i></a>
+		</div>
+		<div class="footer" style="font-size:25px;" >
+		    <a  href="admin/index.php">Admin Login</a>
+		</div>
 
- 
 
-</div>
-
+	    </div>
+	</div>
 </footer>
 
     <script>

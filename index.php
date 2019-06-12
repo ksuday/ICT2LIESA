@@ -33,7 +33,9 @@ if (mysqli_query($link, $sql)) {
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">  
+<!-- <link href='https://fonts.googleapis.com/css?family=Cinzel:400,700,900' rel='stylesheet' type='text/css'> -->
+<!-- <link href='https://fonts.googleapis.com/css?family=Kaushan+Script:400' rel='stylesheet' type='text/css'> -->
 
 </head>
 <body>
@@ -47,13 +49,12 @@ if (mysqli_query($link, $sql)) {
 	<a href="about.html">About Me</a>
 
 	 
-	<a href="illustrations.html">Illustration</a>
-	<a href="designs.html">Design</a>
+	<a href="illustrations.php">Illustration</a>
+	<a href="designs.php">Design</a>
 	 <div class="dropdown">
   <button class="dropbtn">Workshops</button>
   <div class="dropdown-content">
   <a href="workshops.php"> Workshops</a>
-  <a href="gallery.html">Gallery</a>
    <a href="booking.php">Bookings</a>
 
   </div>
@@ -80,11 +81,13 @@ if (mysqli_query($link, $sql)) {
 		</ul>
 
 		<div class="arrow arrow-left">
-			<span class="icon-left-open"></span>
+			<!-- <span class="icon-left-open"></span> -->
+			<i class="fa fa-chevron-left" aria-hidden="true"></i>
 		</div>
 
 		<div class="arrow arrow-right">
-			<span class="icon-right-open"></span>
+			<!--span class="icon-right-open"></span-->
+			<i class="fa fa-chevron-right" aria-hidden="true"></i>	
 		</div>		
 
 	</div>	
@@ -101,7 +104,7 @@ if (mysqli_query($link, $sql)) {
 	 <div class = "background">
      <img class = "blur" src = "images/design1.jpg"/> 
      <div class = "foreground">
-       <h1>Design</h1> 
+       <a href="designs.html"><h1 style=" margin-top: 33%;color :white">Design</h1> </a>
      </div> 
   </div> 
 	 
@@ -109,7 +112,7 @@ if (mysqli_query($link, $sql)) {
 	
   </div>
   <div class="w3-container" id="about">
-  <div class="w3-content" style="max-width:80% pading=100px ;font-family:Gabriolas ; font-size=200px">
+  <div class="w3-content">
 
 	
     <p>For original design solutions ranging from design concepts and ideas to detailed interior planning, colour schemes and set design. 
@@ -121,10 +124,10 @@ Design elements detailed including fabric and wallpaper design.
   
   <div class="col-md-4 col-sm-4 col-xs-12">
     <div class="card">
-	 <div class = "background">
+	 <div class = "background" >
      <img class = "blur" src = "images/illustration2.jpg"/> 
-     <div class = "foreground">
-       <h1>Illustration</h1> 
+     <div class = "foreground" >
+       <a href="illustrations.html"><h1 style=" margin-top: 33%; color :white">Illustration</h1> </a>
      </div> 
   </div> 
 	 
@@ -132,7 +135,7 @@ Design elements detailed including fabric and wallpaper design.
   </div>
   
 	<div class="w3-container" id="about">
-  <div class="w3-content" style="max-width:80% pading=100px ;font-family:Gabriolas ; font-size=35px">
+  <div class="w3-content">
 	<p>L.J specializes in hand drawn and rendered illustrations with custom designs for each project. 
 A variety of options are available from conceptual sketches to completed pen and ink or coloured renderings.</p>
    
@@ -145,7 +148,7 @@ A variety of options are available from conceptual sketches to completed pen and
 	 <div class = "background">
      <img class = "blur" src = "images/3.jpg"/> 
      <div class = "foreground">
-       <h1>Children's  Workshops</h1> 
+       <a href="workshops.php"><h1 style=" margin-top: 33%; color :white">Children's  Workshops</h1> </a>
      </div> 
   </div> 
 	 
@@ -153,7 +156,7 @@ A variety of options are available from conceptual sketches to completed pen and
 	
   </div>
   <div class="w3-container" id="about">
-  <div class="w3-content" style="max-width:80% pading=100px ;font-family:Gabriolas ; font-size=35px">
+  <div class="w3-content">
 	 <p>Fun and creative childrens workshops catering to all skill levels in small groups.
 Children will be encouraged in a safe and nurturing environment whilst exploring their imaginations.
 </p>
@@ -246,26 +249,24 @@ Children will be encouraged in a safe and nurturing environment whilst exploring
 </div>-->
    
   
-   <footer>
- 
-  <div class="footer" >
-  
-		
- <div class="caption-container3" style="background-image: url(images/bghf.jpeg)">
-   <p>© 2018 <a href="privacy.html">Privacy Policy.</a> All rights reserved | Design by <a href="index.php">Team05</a></p>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<div class="wrapper" >
-   <a href="https://www.facebook.com/manjinderbhullar751"><i class="fa fa-3x fa-instagram"></i></a>
-   <a href="https://www.facebook.com/manjinderbhullar751/about?lst=100003009039648%3A100003009039648%3A1533870940"><i class="fa fa-3x fa-facebook-square"></i></a>
-   <a  href="your_url_here"><i class="fa fa-3x fa-twitter-square"></i></a>
-</div>
-  </div>
-    
+<footer>
+	<div class="footer" >	
+	    <div class="caption-container3" style="background-image: url(images/bghf.jpeg)">
+	    <p>&copy; 2019 <a href="privacy.html">Privacy Policy.</a> All rights reserved</p>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<div class="wrapper" >
+		    <a href="https://www.instagram.com" target="_blank"><i class="fa fa-3x fa-instagram"></i></a>
+		    <a href="https://www.facebook.com" target="_blank"><i class="fa fa-3x fa-facebook-square"></i></a>
+		    <a  href="https://au.linkedin.com/" target="_blank"><i class="fa fa-3x  fa-linkedin"></i></a>
+		    <a  href="https://www.pinterest.com" target="_blank"><i class="fa fa-3x  fa-pinterest"></i></a>
+		</div>
+		<div class="footer" style="font-size:25px;" >
+		    <a  href="admin/index.php">Admin Login</a>
+		</div>
 
- 
 
-</div>
-
+	    </div>
+	</div>
 </footer>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="js/slider.js" type="text/javascript"></script>

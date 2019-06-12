@@ -1,7 +1,7 @@
 <?php
 
-$user = 'ictatjcu_liesa';
-$pass = '123zxc';
+$user = 'root';
+$pass = '';
 $host = 'localhost';   
 $database = 'ictatjcu_liesa';
 ?>

@@ -35,7 +35,6 @@ include 'dbinfo.php';
   <button class="dropbtn">Workshops</button>
   <div class="dropdown-content">
   <a  href="workshps.php"> Workshops</a>
-  <a href="gallery.html">Gallery</a>
    <a href="booking.php">Bookings</a>
    <a href="architecture.html"> Architecture</a>
   </div>
@@ -101,11 +100,12 @@ include 'dbinfo.php';
    <p>© 2018 <a href="privacy.html">Privacy Policy.</a> All rights reserved | Design by <a href="index.php">Team05</a></p>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <div class="wrapper" >
-   <a href="https://www.facebook.com/manjinderbhullar751"><i class="fa fa-3x fa-instagram"></i></a>
-   <a href="https://www.facebook.com/manjinderbhullar751/about?lst=100003009039648%3A100003009039648%3A1533870940"><i class="fa fa-3x fa-facebook-square"></i></a>
-   <a  href="your_url_here"><i class="fa fa-3x fa-twitter-square"></i></a>
-</div>
-  </div>
+		    <a href="https://www.facebook.com"><i class="fa fa-3x fa-instagram"></i></a>
+		    <a href="https://www.facebook.com"><i class="fa fa-3x fa-facebook-square"></i></a>
+		    <a  href="your_url_here"><i class="fa fa-3x  fa-linkedin"></i></a>
+		    <a  href="your_url_here"><i class="fa fa-3x  fa-pinterest"></i></a>
+		</div>
+	      </div>
     
 
  

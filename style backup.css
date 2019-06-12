@@ -1,6 +1,4 @@
 /* Style the header with a grey background and some padding */
-/* @import url(https://fonts.googleapis.com/css?family=Cinzel:400,700,900); */
-/* @import url(https://fonts.googleapis.com/css?family=Kaushan+Script:400); */
 @font-face {
     font-family: 'KUNSTLER'; /*a name to be used later*/
     src: url('junstker.TTF'); /*URL to font*/
@@ -14,8 +12,7 @@
 }
 
 body {
-  /*font-family: Arial, Helvetica, sans-serif;*/
-  font-family: 'Gabriolas', serif !important;
+  font-family: Arial, Helvetica, sans-serif;
   overflow-x: hidden;
   width: 100%;
   float: left;
@@ -25,8 +22,8 @@ body {
   background-color: #fff2e6;
   padding: 20px 0;  
   font-family: "Comic Sans MS", cursive, sans-serif;
-  /* font-family: 'KUNSTLER', cursive; */
-    width: 100%;   
+    width: 100%;
+   
     float: left;
 }
 .caption-container p{
@@ -43,7 +40,7 @@ body {
   padding: 12px;
   text-decoration: none;
   font-size: 30px; 
-  line-height: 23px;
+  line-height: 25px;
   border-radius: 4px;
 }
 
@@ -51,7 +48,7 @@ body {
 .header a.logo {
   font-size: 45px;
   font-weight: bold;
-  font-family: "KUNSTLER"; 
+  font-family: "KUNSTLER";
 }
 .header a.logo:hover{
 	color: #dadada;
@@ -60,14 +57,14 @@ body {
 
 /* Change the background color on mouse-over */
 .header .header-right a:hover {
-	background-color: #3c763d;
+	background-color: #1e90ff;
     color: #f7f7f7;
   text-decoration: none;
 }
 
 /* Style the active/current link*/
 .header .header-right a.active {
-  background-color: #3c763d;
+  background-color: dodgerblue;
   color: white;
 }
 
@@ -75,7 +72,7 @@ body {
 .header-right {
   float: right;
    font-size: 30px;
-    font-family: "Gabriolas";
+   font-family: "Gabriolas";
     padding: 25px 0 0 0;
 }
 
@@ -180,7 +177,7 @@ img {
 /* Container for image text */
 .caption-container2 {
   text-align: center;
-  background-color: #444;
+  background-color: #444s;
   padding: 4px 20px;
   color: white;
 }
@@ -248,7 +245,7 @@ body {
   transition: all ease-in-out 150ms;
 }
 .wrapper a:nth-child(1) {
-  color: #7BC67B;
+  color: #dd4b39;
   padding: 0 5px;
 }
 .wrapper a:nth-child(2) {
@@ -274,7 +271,7 @@ body {
 .fa fa-angle-right{
 	text-align:center;
 	text-decoration:bold;
-	color: #7BC67B;
+	color: red;
 }
 
 
@@ -316,9 +313,10 @@ input[type=text], select, textarea {
     border: 1px solid #ccc; /* Gray border */
     border-radius: 4px; /* Rounded borders */
     box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
     resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
 	height: 36px;
-	font-size: 20px;
 }
 
 /* Style the submit button with a specific background color etc */
@@ -330,9 +328,7 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
 }
-select {
-    padding: 0px 10px;
-}
+
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
     background-color: #45a049;
@@ -364,7 +360,7 @@ input[type=submit]:hover {
     border: none;
     outline: none;
     color: white;
-    padding: 2px 12px;
+    padding: 3px 12px;
     background-color: inherit;
     font-family: inherit;
     margin: 0;
@@ -372,7 +368,7 @@ input[type=submit]:hover {
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: #3c763d;
+    background-color: dodgerblue;
 }
 
 .dropdown-content {
@@ -387,17 +383,14 @@ input[type=submit]:hover {
 .dropdown-content a {
     float: none;
     color: black;
-    padding: 8px 16px;
+    padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
-    font-size: 24px;
-	border-radius: 0;
 }
 
 .dropdown-content a:hover {
     background-color: #ddd;
-
 }
 
 .dropdown:hover .dropdown-content {
@@ -459,17 +452,15 @@ input[type=submit]:hover {
 }
 /* Style the counter cards */
 .card {
-  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);  this adds the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
   padding: 16px;
   margin: 20px 0;
   text-align: center;
   background-color: #f1f1f1;
       float: left;
-	  transition: .4s;
 }
 .card:hover {
-	transform: scale(1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-    transition: .4s; 
+    transform: scale(1.23); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 .imgbox{
 	width: 100%;
@@ -632,8 +623,6 @@ footer{
 .thumbnail_section{
 	width: 100%;
 	float: left;
-	/* font-family: 'Cinzel', serif; */
-	padding: 40px 0;
 }
 .left_img{
 	width: 100%;
@@ -660,13 +649,8 @@ footer{
 	float: left;
         }
 .contact_form {
-    padding: 30px 110px;
-    text-align: left;
-    background-color: #fff;
-    box-shadow: 0px 0px 9px 0px #ccc;
-	width: 100%;
-	float: left;
-	font-size: 20px;
+    padding: 30px 0;   
+	text-align: left;
 }
 .arch_img img{
 	width: 100%;
@@ -735,8 +719,6 @@ footer{
 .about_section{
 	width: 100%;
 	float: left;  
-	padding: 40px 0;
-	font-family: 'Cinzel', serif;
 }
 
 @media screen and (max-width: 600px) and (min-width: 320px) {
@@ -809,324 +791,4 @@ footer{
 	.slider-wrapper{
 		top: 256px;
 	}
-}
-
-.arrow.arrow-left {
-    left: 15px;
-    font-size: 22pt;
-}
-.arrow.arrow-right {
-    right: 15px;
-    font-size: 22pt;
-}
-
-.thumbnail_section #about p{
-    font-size: 18px;
-    font-weight: 500;
-}
-.thumbnail_section .card .foreground h1{
-	font-size: 36px;
-	/* font-family: 'cinzel'; */
-}
-.footer p a{
-	color: #000;
-}
-.about_section .right_text h1{
-    font-size: 60px;
-    font-weight: 500;
-    font-family: KUNSTLER;
-}
-.about_section .right_text p{
-    font-size: 25px;
-    font-family: Gabriolas;
-}
-.illustration_hd{
-	width: 100%;
-	float: left;
-	font-family: 'gabriolas';
-	padding: 30px 17px;
-}
-.illustration_hd h1{
-	font-size: 60px;
-    margin: 0 0 20px;
-    font-family: KUNSTLER;
-}
-.illustration_hd .category_row .cat_hd, .illustration_hd .category_row .cat_list{
-    width: 100%;
-    float: left;
-    font-weight: 600;
-    height: 60px;
-    display: flex;
-    vertical-align: middle;
-    justify-content: center;
-    align-items: center;
-    /* border-radius: 5px; */
-    /* box-shadow: 2px 1px 9px #cccccc70; */
-	transition: .4s;
-	font-size: 21px;
-	cursor: pointer;
-}
-.illustration_hd .category_row .border_right{
-	border-right: 4px solid #7BC67B;
-}
-.illustration_hd .category_row .cat_hd {
-    background-color: #7BC67B;
-    color: white;
-    font-weight: 700;
-    font-size: 20px;
-	border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
-}
-.illustration_hd .category_row .cat_list:hover{
-	box-shadow: 0px 0px 6px 0px #cccccc70;
-    background-color: #7bc67b;
-    color: white;
-}
-.illustration_hd .category_row .cat_hd i {
-    padding: 0 0 0 10px;
-}
-.work_hd h1 {  
-    font-size: 60px;
-    margin: 0 0 20px;
-    font-family: 'KUNSTLER';
-    font-weight: 500;
-}
-.work_hd{
-	width: 100%;
-	float: left;
-	color: #000;
-	padding: 30px 15px 0px;
-}
-.gallary_section{
-	width: 100%;
-	float: left;
-	padding-bottom: 40px;
-}
-.contact_form input, .contact_form select, .contact_form input[disabled], .contact_form textarea{
-	background-color: #0000000a;
-    border: 1px solid #0000000a;
-    box-shadow: none;
-	font-size: 20px;
-}
-.booking_section {
-    padding-bottom: 50px;
-    width: 100%;
-    float: left;
-}
-.contact_form .form-group{
-	width: 100%;
-	float: left;
-}
-.contact_form input:focus, .contact_form input:hover, .contact_form select:focus, .contact_form select:hover, .contact_form input[disabled]:focus, .contact_form input[disabled]:hover, .contact_form textarea:focus, .contact_form textarea:hover{
-	box-shadow: none;
-	outline: none;
-	border: 1px solid #7bc67b7a;
-}
-.btn-success {
-    color: #fff;
-    background-color: #7bc67b !important;
-    border-color: #7bc67b !important;
-    transition: .4s;
-	font-size: 24px !important;
-    padding: 3px 10px !important;
-}
-.btn-success:hover, .btn-success:active, .btn-success:focus {
-    background-color: #1685f1 !important;
-    border-color: #7bc67b !important;
-	outline: none;
-	transition: .4s;
-}
-
-.contact_section{
-	width: 100%;
-	float: left;
-    padding-bottom: 50px;
-
-}
-#map {
-    width: 100%;
-    height: 443px;
-    background: #d2daef;
-    float: left;
-}
-#map .mapouter, .gmap_canvas{
-    width: 100% !important;
-    float: left;
-    height: 100% !important;
-        padding-left: 5px;
-
-}
-#map iframe {
-    width: 100%;
-    float: left;
-    height: 100%;
-}
-.contact_section .workshop_info {
-    font-size: 22px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 10px;
-	margin-top: 0;
-}
-.contact_section form{
-	padding: 30px;
-}
-.contact_section form .submitbtn{
-	width: 100%;
-	float: left;
-}
-
-.tz-gallery{
-	width: 100%;
-	float: left;
-}
-.tz-gallery div {
-    padding: 2px;
-}
-
-.tz-gallery .lightbox img {
-    width: 100%;
-    border-radius: 0;
-    position: relative;
-}
-
-.tz-gallery .lightbox:before {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -13px;
-    margin-left: -13px;
-    opacity: 0;
-    color: #fff;
-    font-size: 26px;
-    font-family: 'Glyphicons Halflings';
-    content: '\e003';
-    pointer-events: none;
-    z-index: 9000;
-    transition: 0.4s;
-}
-
-
-.tz-gallery .lightbox:after {
-    position: absolute;
-    top: 0;
-    left: 0;
-	width: 89%;
-    height: 84%;
-    opacity: 0;
-    background-color: #7bc67b8c;
-    content: '';
-    transition: 0.4s;
-	margin: auto;
-    right: 0;
-    bottom: 0;
-}
-
-.tz-gallery .lightbox:hover:after,
-.tz-gallery .lightbox:hover:before {
-    opacity: 1;
-}
-
-.baguetteBox-button {
-    background-color: transparent !important;
-}
-.tz-gallery .card{
-	margin: 0;
-}
-.tz-gallery .card:hover {
-    transform: scale(1);
-}
-.illustration_section{
-	width: 100%;
-	float: left;
-	padding-bottom: 40px;
-}
-.illustration_section .tz-gallery .card {
-    margin: 0;
-    height: 350px;
-}
-.illustration_section .tz-gallery .lightbox img {
-    height: 100%;
-}
-.illustration_section .tz-gallery .lightbox:after {
-    width: 93%;
-    height: 91%;
-}
-.design_section{
-	width: 100%;
-	float: left; 
-	padding-bottom: 40px;
-}
-.design_section .tz-gallery .card {
-    margin: 0;
-    height: 350px;
-}
-.design_section .tz-gallery .lightbox img {
-    height: 100%;
-}
-.design_section .tz-gallery .lightbox:after {
-    width: 93%;
-    height: 91%;
-} 
-.footer p {
-    font-size: 16px;
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-}
-.booknow_btn{
-	background-color: #7bc67b;
-    border: 1px solid #7bc67b;
-    transition: .4s;
-    font-size: 18px;
-    padding: 7px 18px;
-    color: white;
-	float: right;    
-	margin: 20px 0 0;
-	cursor: pointer;
-}
-.booknow_btn:hover, .booknow_btn:focus, .booknow_btn:active{
-    background-color: #1685f1 !important;
-    border-color: #7bc67b !important;
-	outline: none;
-	transition: .4s;	
-}
-.event_name {
-	font-size: 26px;
-    font-weight: 600;
-    width: 56%;
-    float: right;
-    border-bottom: 1px solid #d0d0d0;
-}
-.event_date {
-    font-size: 20px;
-    padding: 0;
-	margin: 0;
-	width: 36%;
-    float: left;
-}
-.grid_workshop{
-	background-color: white;
-	border: 2px solid #bbb;
-	padding: 20px;
-}
-.worshop_section{
-	width: 100%;
-	float: left;
-	padding-bottom: 40px;
-}
-.category_row  {
-    padding: 0;
-    border-bottom: 0 !important;
-}
-.category_row li{
-	display: inline-block;
-}
-.category_row li a{
-	text-decoration: none;
-	color: #000000;
-}
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
-    box-shadow: 0px 0px 6px 0px #cccccc70;
-    background-color: #7bc67b !important;
-    color: white !important;
-    border: 0 !important;
 }

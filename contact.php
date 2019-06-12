@@ -5,6 +5,7 @@
 <link href="css/slider.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 </head>
 <body>
@@ -16,13 +17,12 @@
 	<a href="about.html">About Me</a>
 
 	 
-	<a href="illustrations.html">Illustrations</a>
-	<a href="designs.html">Designs</a>
+	<a href="illustrations.php">Illustrations</a>
+	<a href="designs.php">Designs</a>
 	 <div class="dropdown">
   <button class="dropbtn">Workshops</button>
   <div class="dropdown-content">
   <a href="workshops.php"> Workshops</a>
-  <a href="gallery.html">Gallery</a>
    <a href="booking.php">Bookings</a>
 
   </div>
@@ -36,35 +36,36 @@
 
 
 
-<div class="caption-container2">
-    <H3 ><p id="caption"> <H1 style="font-family:KUNSTLER ; font-size:60px"> Contact Me</H1></p></H3>
+<div class="caption-container2 work_hd" style=" background-color: white; color: black">
+    <h1> Contact Me</h1>
   </div>
-  <div class="row">
-  <div class="column" >
- <div class="container">
-  <form method="post" onsubmit="return validate();">
+  <div class="contact_section">
+  <div class="col-md-2 col-sm-2 col-xs-12">
+</div>
 
-    <label >Name</label>
-    <input type="text"  id="name" name="name" placeholder="Your name.." required>
-
-    <label >Phone No.</label>
-    <input type="text" id="phone" name="phone" placeholder="Your Phone No.." required max="10">
-
-   
-    <label for="subject">Query</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
-
-    <input type="submit" value="Submit" name="submit">
+  <div class="col-md-8 col-sm-8 col-xs-12">
+ <div class="">
+  <form method="post" class="contact_form" onsubmit="return validate();">
+	<div class="form-group">
+		<label class="control-label">Name</label>
+		<input type="text" class="form-control" id="name" name="name" placeholder="Your name.." required>
+	</div>
+	<div class="form-group">
+    <label class="control-label">Phone No.</label>
+    <input type="text" class="form-control" id="phone" name="phone" placeholder="Your Phone No.." required max="10">
+	</div>
+    <div class="form-group">
+		<label for="subject" class="control-label">Query</label>
+		<textarea id="subject" class="form-control" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
+	</div>
+    <input type="submit" class="btn-success btn submitbtn" value="Submit" name="submit">
 
   </form>
-</div> </div> 
-<div class="column" style="font-family:Gabriolsa; font-size=35px">
-<h1>Chidren workshops will be held at Crackerjack Toys-Bulimba</h1>
+</div> 
+</div> 
+<div class="col-md-2 col-sm-2 col-xs-12">
+</div>
 
-<div id="map" style="width:600px;height:400px;background:yellow">
-<div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=cracker%20jack%20bulimba&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.crocothemes.net"></a></div><style>.mapouter{text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div>
-</div>
-</div>
 </div>
 
 <!--
@@ -79,26 +80,24 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 
    
   
-    <footer>
- 
-  <div class="footer" >
-  
-		
- <div class="caption-container3" style="background-image: url(images/bghf.jpeg)">
-   <p>© 2018 <a href="privacy.html">Privacy Policy.</a> All rights reserved | Design by <a href="index.php">Team05</a></p>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<div class="wrapper" >
-   <a href="https://www.facebook.com/manjinderbhullar751"><i class="fa fa-3x fa-instagram"></i></a>
-   <a href="https://www.facebook.com/manjinderbhullar751/about?lst=100003009039648%3A100003009039648%3A1533870940"><i class="fa fa-3x fa-facebook-square"></i></a>
-   <a  href="your_url_here"><i class="fa fa-3x fa-twitter-square"></i></a>
-</div>
-  </div>
-    
+<footer>
+	<div class="footer" >	
+	    <div class="caption-container3" style="background-image: url(images/bghf.jpeg)">
+	    <p>&copy; 2019 <a href="privacy.html">Privacy Policy.</a> All rights reserved</p>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<div class="wrapper" >
+		    <a href="https://www.instagram.com" target="_blank"><i class="fa fa-3x fa-instagram"></i></a>
+		    <a href="https://www.facebook.com" target="_blank"><i class="fa fa-3x fa-facebook-square"></i></a>
+		    <a  href="https://au.linkedin.com/" target="_blank"><i class="fa fa-3x  fa-linkedin"></i></a>
+		    <a  href="https://www.pinterest.com" target="_blank"><i class="fa fa-3x  fa-pinterest"></i></a>
+		</div>
+		<div class="footer" style="font-size:25px;" >
+		    <a  href="admin/index.php">Admin Login</a>
+		</div>
 
- 
 
-</div>
-
+	    </div>
+	</div>
 </footer>
 
   <script>
